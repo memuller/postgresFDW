@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages, Extension
 
 setup(
-  name = 'memullerPostgresFDW',
+  name = 'memPostgres',
   version = '0.0.1',
   author = 'Matheus E. Muller',
   author_email = 'hello@memuller.com',
   license = 'UNLICENSE',
-  packages = ['lib']
+  packages = ['memPostgres', 'memPostgres.models']
 )

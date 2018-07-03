@@ -1,12 +1,12 @@
 from multicorn import ForeignDataWrapper
 import requests
 
-class ConstantForeignDataWrapper(ForeignDataWrapper):
+class Test(ForeignDataWrapper):
 
   def __init__(self, options, columns):
     # options: dict
     # columns: [ column_name: type ]
-    super(ConstantForeignDataWrapper, self).__init__(options, columns)
+    super(Test, self).__init__(options, columns)
     self.columns = columns
   
   def execute(self, quals, columns):
